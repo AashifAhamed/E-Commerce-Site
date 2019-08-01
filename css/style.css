@@ -98,6 +98,11 @@ hr{
 	font-weight: 700;
 }
 
+.searchbar{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .navbar-default .navbar-toggle .icon-bar {background: #eeeeee;}
 .navbar-default .navbar-toggle {border-radius: 0;}
 .navbar-default .navbar-toggle:hover, 
