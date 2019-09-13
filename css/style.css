@@ -1,7 +1,7 @@
 /*
- * Basic CSS starts 
+ * Basic CSS starts
  */
- 
+
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
 
 body{
@@ -64,17 +64,17 @@ hr{
 }
 
 
-.pad {padding: 250px 0px;}
+.pad {padding-top: 150px;}
 
 .parallax-one { background: url('../img/promo/p1.jpg') fixed 50%;}
 .parallax-two { background: url('../img/background/overlay.png'), url('../img/promo/p2.jpg') fixed 50%;}
 .parallax-three { background: url('../img/background/overlay.png'), url('../img/promo/p3.jpg') fixed 50%;}
 .parallax-four { background: url('../img/background/overlay.png'), url('../img/promo/p4.jpg') fixed 50%;}
 
-/* 
- * Basic CSS ends 
+/*
+ * Basic CSS ends
  */
- 
+
 /* header */
 /* navigation */
 
@@ -105,7 +105,7 @@ hr{
 
 .navbar-default .navbar-toggle .icon-bar {background: #eeeeee;}
 .navbar-default .navbar-toggle {border-radius: 0;}
-.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus{background: transparent;}
 
 .navbar-brand>img {
@@ -163,8 +163,8 @@ hr{
   -moz-animation-delay: 0.5s;
   -ms-animation-duration: 3s;
   -ms-animation-delay: 0.5s;
-  -o-animation-duration: 3s;    
-  -o-animation-delay: 0.5s;    
+  -o-animation-duration: 3s;
+  -o-animation-delay: 0.5s;
   animation-duration:3s;
   animation-delay:0.5s;
 }
@@ -176,8 +176,8 @@ hr{
   -moz-animation-delay: 1s;
   -ms-animation-duration: 2s;
   -ms-animation-delay: 1s;
-  -o-animation-duration: 2s;    
-  -o-animation-delay: 1s;    
+  -o-animation-duration: 2s;
+  -o-animation-delay: 1s;
   animation-duration:2s;
   animation-delay:1s;
 }
@@ -195,8 +195,8 @@ hr{
   -moz-animation-delay: 1s;
   -ms-animation-duration: 2s;
   -ms-animation-delay: 1s;
-  -o-animation-duration: 2s;    
-	-o-animation-delay: 1s;      
+  -o-animation-duration: 2s;
+	-o-animation-delay: 1s;
   animation-duration:2s;
   animation-delay:1s;
 }
@@ -208,8 +208,8 @@ hr{
   -moz-animation-delay: 2.5s;
   -ms-animation-duration: 2s;
   -ms-animation-delay: 2.5s;
-  -o-animation-duration: 2s;    
-  -o-animation-delay: 2.5s;    
+  -o-animation-duration: 2s;
+  -o-animation-delay: 2.5s;
   animation-duration:2s;
   animation-delay:2.5s;
 }
@@ -417,7 +417,7 @@ hr{
 }
 
 .playlist-content .playlist-number .song-info {
-	float: left;	
+	float: left;
 }
 
 .playlist-content .playlist-number .song-info h4 {
@@ -459,7 +459,7 @@ hr{
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: 300;
-	color: #fff;	
+	color: #fff;
 }
 
 .promo .promo-element .promo-link {
@@ -586,7 +586,7 @@ hr{
 	max-width: 450px;
 	margin: 0 auto;
 	margin-top: 30px;
-	padding: 20px 25px; 
+	padding: 20px 25px;
 	background: #252c37;
 }
 
@@ -899,7 +899,7 @@ hr{
 	-o-transition: all 0.25s linear;
 	transition: all 0.25s linear;
 }
-	
+
 .member-img .social a i {
 	width: 45px;
 	height: 45px;
@@ -1036,7 +1036,7 @@ hr{
 .form-content form .form-control {border-radius: 3px;}
 .form-content form .btn {margin-top: 30px;}
 
-#error, 
+#error,
 #success {
 	margin-top: 30px;
 	display: none;
@@ -1112,45 +1112,45 @@ footer .copy-right {
 	width:15px;
 	height:15px;
 	margin: 5px auto;
-}	
+}
 
 /*
- * Responsive CSS 
+ * Responsive CSS
  */
 
 /*
- * Mobile phones 
+ * Mobile phones
  */
 @media (max-width: 575px){
 	.banner .slide-one h3, .banner .slide-two h3,
 	.banner .slide-one .btn, .banner .slide-two .btn {display: none !important;}
 	.banner-video .slider .video-header {bottom: 70px;}
-	
+
 	.meet .meet-map .map-marker img {max-width: 15px !important;}
 }
 
 /*
- * Tablets 
+ * Tablets
  */
 @media (max-width: 767px){
 	.navbar-default .navbar-collapse {
 		border-color: rgba(0,0,0,0.15);
 		box-shadow: none;
 	}
-	
+
 	.navbar-default .navbar-brand {padding-top: 5px;}
 	.navbar-default .navbar-brand>img {max-width: 72px;}
-	
+
 	.navbar, .navbar.comeup { margin-top: 0; padding: 10px 0; background: rgba(0,0,0,0.9);}
 	header .navbar-default .navbar-nav>li>a, header .navbar-default .navbar-nav>li.active>a,
-	header .navbar-default .navbar-nav>li.active>a:hover, header .navbar-default .navbar-nav>li>a:hover	{ 
+	header .navbar-default .navbar-nav>li.active>a:hover, header .navbar-default .navbar-nav>li>a:hover	{
 		padding-top: 8px;
 		padding-bottom: 8px;
 		background: none;
 	}
 	.navbar .navbar-nav {margin-top: 0;}
 	.secondary-menu {display: none;}
-	
+
 	.banner .slide-one, .banner .slide-two {top: 80px !important;}
 	.banner .carousel .carousel-control {display: none;}
 	.banner .slide-one h2, .banner .slide-two h2 {font-size: 32px !important;}
@@ -1160,20 +1160,20 @@ footer .copy-right {
 		padding: 8px 12px;
 		font-size: 14px;
 	}
-	
+
 	.banner-video .slider .video-header {bottom: 25%;}
 	.banner-video .slider .video-header p	{display: none;}
 	.banner-video .slider .video-header h3 {
 		font-size: 32px;
 		margin-bottom: 20px;
 	}
-	
-		
+
+
 	.hero-playlist .playlist-content {
 		max-width: 450px;
 		margin: 0 auto;
 	}
-	
+
 	.portfolio-content .item .p-hover {top: 0;}
 	.featured .featured-item .figure p,
 	.portfolio-content .item .p-transparent,
@@ -1181,30 +1181,30 @@ footer .copy-right {
 		opacity:0.8;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 	}
-		
+
 	.cta .cta-element {
 		max-width: 500px;
 		margin: 0 auto;
 		text-align: center;
 	}
-	
+
 	.cta .cta-element .cta-btn {margin-top: 30px;}
-	
+
 	.work-with-us .why-content .why-message {max-width: 450px; margin: 0 auto;}
-	
+
 	.news-letter .news-content {
 		max-width: 500px;
 		margin: 0 auto;
 	}
-		
+
 	.events .events-item {
 		max-width: 500px;
 		margin: 0 auto;
 		margin-top: 30px;
 	}
-	
+
 	.meet .meet-map .map-marker img {max-width: 18px;}
-	
+
 	.contact .form-content {
 		max-width: 500px;
 		margin: 0 auto;
@@ -1212,11 +1212,11 @@ footer .copy-right {
 }
 
 /*
- * Desktop 
+ * Desktop
  */
 @media (max-width: 991px){
 	.banner .slide-one, .banner .slide-two {top: 130px;}
 }
 
-@media (max-width: 1100px){ 
+@media (max-width: 1100px){
 }
