@@ -30,7 +30,7 @@
 	<body>
 
 		<!-- wrapper -->
-		<div class="wrapper" id="home">
+		<div class="homei" id="home">
 
 			<!-- header area -->
 			<header>
@@ -73,89 +73,251 @@
 				</nav>
 			</header>
 			<!--/ header end -->
-
-
-			<!-- Hero block area -->
-			<div id="latestalbum" class="hero pad">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<span>
-								<a href="/">Home</a>
-								<span>/</span>
-								<a href="Product.html">Profile</a>
-							</span>
-							<br><br>
-          	</div>
-            <div class="col-md-2 panel panel-info">
-							<div class="tabbable">
-						    <ul class="nav nav-tabs" id="myTab">
-						        <li><a href="#home"  class="active" data-toggle="tab">Profile</a></li><br>
-						        <li><a href="#foo" data-toggle="tab">Shipping & Billing Address</a></li><br>
-						        <li><a href="#bar" data-toggle="tab">Edit Account Details</li>
-						    </ul>
-						</div>
-            </div>
-            <div class="col-md-9">
-							<div>
-									<div class="tab-pane active" id="home">
-										<div class="container form">
-								        <div class="row">
-								            <div class="col-md-7">
-								                <!-- <div class="row">
-								                    <div class="form-group col-md-12">
-								                        <h2>Account Details</h2>
-								                    </div>
-								                </div> -->
-								                <form name="accdetForm" id="accdetForm" method="POST" action="">
-								                    <div class="row">
-								                        <div class="col-md-12">
-								                            <div class="control-group">
-								                                <label>First Name</label>
-								                                <input type="text" class="demo-default form-control" placeholder="Enter First Name">
-								                            </div>
-								                            <div class="control-group">
-								                                <label>Last Name</label>
-								                                <input type="text" class="demo-default form-control" placeholder="Enter Last Name">
-								                            </div>
-								                            <div class="control-group">
-								                                <label>Email</label>
-								                                <input type="email" class="demo-default form-control" placeholder="Enter Email">
-								                            </div><br>
-								                            <div class="control-group">
-								                                <h4>Change Password</h4>
-								                                <label>Current Password</label>
-								                                <input type="password" class="demo-default form-control" placeholder="Enter Current Password">
-								                            </div>
-								                            <div class="control-group">
-								                                <label>New Password</label>
-								                                <input type="password" class="demo-default form-control" placeholder="Enter New Password">
-								                            </div>
-								                            <div class="control-group">
-								                                <label>Confirm Password</label>
-								                                <input type="password" class="demo-default form-control" placeholder="Enter Confirm Password">
-								                            </div>
-								                        </div>
-								                    </div>
-								                    <br>
-								                    <div class="row">
-								                        <div class="form-group col-md-12 text-center">
-								                            <input type="submit" class="btn btn-primary" value="Save changes">
-								                        </div>
-								                    </div>
-
-								                </form>
-								            </div>
-								        </div>
-								    </div>
+			<div class="pader">
+				<!-- Hero block area -->
+				<div id="latestalbum" class="hero pad">
+					<div class="container">
+						<div class="row">
+							<div class="my-account-area">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="panel-group  margin-btm-0" id="accordion">
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#personal-info" aria-expanded="true">
+															<i class="pe-7s-bookmarks"></i>
+															<span>My Personal Information</span>
+															</a>
+														</h4>
+													</div>
+													<div id="personal-info" class="panel-collapse collapse in" role="tabpanel">
+														<div class="panel-body">
+															<form action="#">
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="billing-address">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<input type="text" class="custom-form" placeholder="First Name" />
+																				</div>
+																				<div class="col-md-6">
+																					<input type="text" class="custom-form" placeholder="Last Name" />
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-12">
+																					<input type="text" class="custom-form" placeholder="Office Address" />
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-12">
+																					<input type="text" class="custom-form" placeholder="Home Address" />
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-6">
+																					<select class="custom-select custom-form">
+																						<option>City</option>
+																						<option>Dhaka</option>
+																						<option>New York</option>
+																						<option>London</option>
+																						<option>Melbourne</option>
+																					</select>
+																				</div>
+																				<div class="col-md-6">
+																					<select class="custom-select custom-form">
+																						<option>Country</option>
+																						<option>Bangladesh</option>
+																						<option>United States</option>
+																						<option>United Kingdom</option>
+																						<option>Australia</option>
+																					</select>
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-6">
+																					<select class="custom-select custom-form">
+																						<option>Post Code</option>
+																						<option>012345</option>
+																						<option>0123456</option>
+																						<option>01234567</option>
+																						<option>012345678</option>
+																					</select>
+																				</div>
+																				<div class="col-md-6">
+																					<input class="custom-form" type="password" placeholder="Password" />
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-6">
+																					<input type="text" class="custom-form" placeholder="Cell Number" />
+																				</div>
+																				<div class="col-md-6">
+																					<input type="text" class="custom-form" placeholder="Phone Number" />
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-12">
+																					<input type="text" class="custom-form" placeholder="Email" name="email" />
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-12">
+																					<textarea class="custom-form" placeholder="Additional information"></textarea>
+																				</div>
+																			</div>
+																			<div class="checkbox">
+																				<label>
+																					<input type="checkbox" name="subscribe" checked="checked"/>
+																					I wish to subscribe to the Fashion newsletter.
+																				</label>
+																				<label>
+																					<input type="checkbox" name="subscribe"/>
+																					I have read and agree to the
+																					<a href="#"><b>Privacy Policy</b></a>
+																				</label>
+																			</div>
+																			<div class="row">
+																				<div class="col-md-12">
+																					<input type="submit" class="custom-submit-2 save" value="Save" />
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="panel-group margin-btm-0" >
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+															<a href="wishlist.html" >
+															<i class="pe-7s-like"></i>
+															<span>My Wishlist Information</span>
+															</a>
+														</h4>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+															<a href="cart.html">
+															<i class="pe-7s-news-paper"></i>
+															<span>Order history and details</span>
+															</a>
+														</h4>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="" href="#shipping-info" aria-expanded="true">
+															<i class="pe-7s-cart"></i>
+															<span>My shipping address</span>
+															</a>
+														</h4>
+													</div>
+													<div id="shipping-info" class="panel-collapse collapse" role="tabpanel">
+														<div class="panel-body">
+															<!-- CHECKOUT-AREA START -->
+															<div class="checkout-area">
+																<form action="#">
+																	<div class="row">
+																		<!-- Shipping-Address Start -->
+																		<div class="col-md-12">
+																			<div class="shipping-address">
+																				<div class="row">
+																					<div class="col-md-12">
+																						<select class="custom-select custom-form">
+																							<option>Select Delivery Method</option>
+																							<option>Select Delivery Method</option>
+																							<option>Select Delivery Method</option>
+																						</select>
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-md-6">
+																						<input class="custom-form" type="text" placeholder="Subash" name="firstname"/>
+																					</div>
+																					<div class="col-md-6">
+																						<input class="custom-form" type="text" placeholder="Chandra" name="lastname"/>
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-md-12">
+																						<input type="text" class="custom-form" placeholder="Address" />
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-md-6">
+																						<select class="custom-select custom-form">
+																							<option>City</option>
+																							<option>Dhaka</option>
+																							<option>New York</option>
+																							<option>London</option>
+																							<option>Melbourne</option>
+																						</select>
+																					</div>
+																					<div class="col-md-6">
+																						<select class="custom-select custom-form">
+																							<option>Country</option>
+																							<option>Bangladesh</option>
+																							<option>United States</option>
+																							<option>United Kingdom</option>
+																							<option>Australia</option>
+																						</select>
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-md-6">
+																						<input class="custom-form" type="text" placeholder="Phone Number" />
+																					</div>
+																					<div class="col-md-6">
+																						<select class="custom-select custom-form">
+																							<option>Post Code</option>
+																							<option>012345</option>
+																							<option>0123456</option>
+																							<option>01234567</option>
+																							<option>012345678</option>
+																						</select>
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-md-12">
+																						<input type="text" class="custom-form" placeholder="Email" name="email" />
+																					</div>
+																				</div>
+																				<div class="row">
+																					<div class="col-md-12">
+																						<textarea class="custom-form" placeholder="Order Note"></textarea>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- Shipping-Address End -->
+																	</div>
+																</form>
+															</div>
+															<!-- CHECKOUT-AREA END -->
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="tab-pane" id="foo"></div>
-									<div class="tab-pane" id="bar"></div>
+								</div>
 							</div>
-            </div>
-          </div>
-      	</div>
-      </div>
+						</div>
+					</div>
+				</div>
+			</div>
     </div>
 
 
