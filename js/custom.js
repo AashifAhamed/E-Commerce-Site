@@ -3,9 +3,15 @@
 // js by aashif
 document.getElementById("c").onclick = function() {
   document.getElementById("circle").style.display = "none";
+  alert('Item Removed');
 }
 document.getElementById("c1").onclick = function() {
   document.getElementById("circle1").style.display = "none";
+  alert('Item Removed');
+}
+document.getElementById("checkout").onclick = function() {
+  // document.getElementById("circle1").style.display = "none";
+  alert('Your Order Added');
 }
 
 $(function() {
@@ -24,6 +30,11 @@ $(function() {
     });
 });
 
+// function showAlert() {
+//     var country = "Item Removed";
+//     console.log(conntry);
+//     alert( 'Item Removed.');
+// }
 /* navigation menu animation with way points */
 
 $('.nav-animate').waypoint(function(direction) {
