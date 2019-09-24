@@ -68,7 +68,8 @@ hr{
 	background-color: gray;
 	transparent: 80%;
 } */
-.pad {padding-top: 130px;}
+.pad {padding-top: 10px;}
+.pad-bottom {padding-bottom: 10px;}
 
 .parallax-one { background: url('../img/promo/p1.jpg') fixed 50%;}
 .parallax-two { background: url('../img/background/overlay.png'), url('../img/promo/p2.jpg') fixed 50%;}
