@@ -94,7 +94,7 @@
 												</span>
 											</div>
 										</li>
-										<li><a href="gellary.html">GELLARY</a></li>
+										<li><a href="gallery.html">gallery</a></li>
 										<li><a href="news.html">NEWS</a></li>
 										<li><a href="aboutus.html">about us</a></li>
 										<li><a href="contactus.html">contact us</a></li>
@@ -195,7 +195,7 @@
 									<ul>
 										<li><a href="index.html" active >home</a>
 										</li>
-										<li><a href="gellary.html">GELLARY</a></li>
+										<li><a href="gallery.html">gallery</a></li>
 										<li><a href="news.html">NEWS</a></li>
 										<li><a href="aboutus.html">about us</a></li>
 										<li><a href="contactus.html">contact us</a></li>
@@ -228,15 +228,6 @@
 				<!-- Hero block area -->
 				<div id="latestalbum" class="hero pad">
 					<div class="container">
-						<div class="col-md-12 pad-bottom">
-							<span>
-								<a href="/">Home</a>
-								<span>/</span>
-								<a href="Product.html">Products</a>
-								<span>/</span>
-								<a href="cart.html">Cart</a>
-							</span>
-						</div>
 						<div class="row">
 							<div class="my-account-area">
 								<div class="container">
@@ -260,25 +251,25 @@
 																		<div class="billing-address">
 																			<div class="row">
 																				<div class="col-md-6">
-																					<input type="text" class="custom-form" placeholder="First Name" />
+																					<input type="text" class="custom-form" placeholder="First Name" required/>
 																				</div>
 																				<div class="col-md-6">
-																					<input type="text" class="custom-form" placeholder="Last Name" />
+																					<input type="text" class="custom-form" placeholder="Last Name" required/>
 																				</div>
 																			</div>
 																			<div class="row">
 																				<div class="col-md-12">
-																					<input type="text" class="custom-form" placeholder="Office Address" />
+																					<input type="text" class="custom-form" placeholder="Office Address" required />
 																				</div>
 																			</div>
 																			<div class="row">
 																				<div class="col-md-12">
-																					<input type="text" class="custom-form" placeholder="Home Address" />
+																					<input type="text" class="custom-form" placeholder="Home Address" required />
 																				</div>
 																			</div>
 																			<div class="row">
 																				<div class="col-md-6">
-																					<select class="custom-select custom-form">
+																					<select class="custom-select custom-form" required>
 																						<option>City</option>
 																						<option>Dhaka</option>
 																						<option>New York</option>
@@ -287,7 +278,7 @@
 																					</select>
 																				</div>
 																				<div class="col-md-6">
-																					<select class="custom-select custom-form">
+																					<select class="custom-select custom-form" required>
 																						<option>Country</option>
 																						<option>Bangladesh</option>
 																						<option>United States</option>
@@ -298,7 +289,7 @@
 																			</div>
 																			<div class="row">
 																				<div class="col-md-6">
-																					<select class="custom-select custom-form">
+																					<select class="custom-select custom-form" >
 																						<option>Post Code</option>
 																						<option>012345</option>
 																						<option>0123456</option>
@@ -307,20 +298,20 @@
 																					</select>
 																				</div>
 																				<div class="col-md-6">
-																					<input class="custom-form" type="password" placeholder="Password" />
+																					<input class="custom-form" type="password" placeholder="Password" required/>
 																				</div>
 																			</div>
 																			<div class="row">
 																				<div class="col-md-6">
-																					<input type="text" class="custom-form" placeholder="Cell Number" />
+																					<input type="tel" pattern='\d{3}\d{4}\d{3}' class="custom-form" placeholder="Cell Number" required placeholder="Enter a valid phone number" />
 																				</div>
 																				<div class="col-md-6">
-																					<input type="text" class="custom-form" placeholder="Phone Number" />
+																					<input type="tel" pattern='\d{3}\d{4}\d{3}' class="custom-form" placeholder="Phone Number" required placeholder="Enter a valid phone number" />
 																				</div>
 																			</div>
 																			<div class="row">
 																				<div class="col-md-12">
-																					<input type="text" class="custom-form" placeholder="Email" name="email" />
+																					<input type="email" class="custom-form" placeholder="Email" name="email" required placeholder="Enter a valid email address"/>
 																				</div>
 																			</div>
 																			<div class="row">
@@ -478,7 +469,9 @@
 					</div>
 				</div>
 			</div>
-			</div>		</section>
+    </div>
+
+</section>
 
 
 			<!-- footer -->
