@@ -5,6 +5,7 @@ document.getElementById("c").onclick = function() {
   document.getElementById("circle").style.display = "none";
   alert('Item Removed');
 }
+document.getElementById("adi").value = "456/1 Dialog Road, Colombo";
 document.getElementById("c1").onclick = function() {
   document.getElementById("circle1").style.display = "none";
   alert('Item Removed');
