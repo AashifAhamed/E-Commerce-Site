@@ -228,6 +228,10 @@ select {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
 }
+.total-cart-brief1 {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+}
 .pro-action,
 .header-top-right ul li .submenu, .collection-photo a::before {
   transition: all 0.5s ease 0s;
@@ -524,12 +528,21 @@ select {
   overflow: inherit;
 }
 .total-cart a i:hover{
-    color: ##306cf2;
+    color: #306cf2;
 }
 .total-cart ul li .total-cart-brief {
   background: #fff none repeat scroll 0 0;
   box-shadow: 2px 6px 8px 6px rgba(0, 0, 0, 0.13);
   padding: 30px 0 0;
+  position: absolute;
+  right: 0;
+  top: 70px;
+  width: 280px;
+  z-index: 999;
+}
+.total-cart ul li .total-cart-brief1 {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 2px 6px 8px 6px rgba(0, 0, 0, 0.13);
   position: absolute;
   right: 0;
   top: 70px;
@@ -601,7 +614,16 @@ select {
   transform: scaleY(0);
   transform-origin: 0 0 0;
 }
+.total-cart-brief1 {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+}
 .total-cart ul li:hover .total-cart-brief {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.total-cart ul li:hover .total-cart-brief1 {
   opacity: 1;
   transform: scaleY(1);
 }
@@ -1567,6 +1589,7 @@ select {
   overflow: hidden;
   padding: 25px 60px 20px 35px;
   position: relative;
+  margin-top: 30px;
 }
 .subscribe::before {
   background: #f4f4f4 none repeat scroll 0 0;
@@ -3771,7 +3794,7 @@ span.email-notes {
   margin-bottom: 20px;
   padding-bottom: 8px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .contact-form input[type="text"], .contact-form input[type="email"] {
     border: 1px solid #ccc;
@@ -3808,17 +3831,17 @@ span.email-notes {
   border-bottom: 1px solid #e8e8e9;
   float: left;
   font-size: 12px;
-  line-height: 40px;
+  line-height: 25px;
   list-style: outside none none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-.panel-title span::before {
+/* .panel-title span::before {
   color: #dedede;
   content: "|";
   padding: 0 10px;
-}
+} */
 .custom-submit-2.save {
   background: #252525 none repeat scroll 0 0;
   color: #fff;
