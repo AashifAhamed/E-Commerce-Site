@@ -369,3 +369,31 @@
 						<script src="js/custom.js"></script>
 					</body>
 				</html>
+				<script>
+
+				function validateLogin(){
+				var status = true;
+				var userName=document.getElementById('login').value;
+				var passWord=document.getElementById('password').value;
+				if(userName==""){
+				//alert();
+				  document.getElementById("validateUser").style.display='inline';
+				  status = false;
+				}else{
+				document.getElementById("validateUser").style.display='none';
+				  status = true;
+				}if(passWord==""){
+				//alert();
+				  document.getElementById("validatePassword").style.display='inline';
+				  status = false;
+				}else{
+				document.getElementById("validatePassword").style.display='none';
+				 status =true;
+				}
+
+				if(status== true){
+				window.location.href = "index.html";
+				}
+
+				}
+				</script>
