@@ -1,5 +1,41 @@
 
 
+// js by aashif
+document.getElementById("c").onclick = function() {
+  document.getElementById("circle").style.display = "none";
+  alert('Item Removed');
+}
+document.getElementById("adi").value = "456/1 Dialog Road, Colombo";
+document.getElementById("c1").onclick = function() {
+  document.getElementById("circle1").style.display = "none";
+  alert('Item Removed');
+}
+document.getElementById("checkout").onclick = function() {
+  // document.getElementById("circle1").style.display = "none";
+  alert('Your Order Added');
+}
+
+$(function() {
+    // var baseURL = 'http://yourdomain.com/ajax/';
+    //load content for first tab and initialize
+    $('#home').load('profile.html', function() {
+        $('#myTab').tab(); //initialize tabs
+    });
+    $('#myTab').bind('show', function(e) {
+       var pattern=/#.+/gi //use regex to get anchor(==selector)
+       var contentID = e.target.toString().match(pattern)[0]; //get anchor
+       //load content for selected tab
+       $(contentID).load(contentID.replace('#',''), function(){
+            $('#myTab').tab(); //reinitialize tabs
+       });
+    });
+});
+
+// function showAlert() {
+//     var country = "Item Removed";
+//     console.log(conntry);
+//     alert( 'Item Removed.');
+// }
 /* navigation menu animation with way points */
 
 $('.nav-animate').waypoint(function(direction) {
@@ -10,7 +46,7 @@ $('.nav-animate').waypoint(function(direction) {
 });
 
 // Block scrolling
-	
+
 $('.nav li a').bind('click', function(e){
 		var anchor = $(this);
 		$('html, body').stop().animate({
@@ -25,18 +61,18 @@ $('.nav li a').bind('click', function(e){
 
 /* play list music button */
 $(document).ready(function(){
-	
+
 	var obj = document.createElement("audio");
 	obj.src = "../HTML/audio/audio.mp3";
 	obj.volume = 1;
 	obj.autoPlay = true;
-	obj.preLoad = true;       
-	
+	obj.preLoad = true;
+
 	$('#playNowBtn').click(function(e){
 		var $playNowButton = $(this);																/* button variable */
 		var $playlist = $playNowButton.parent().parent();						/* play list section class */
 		var $disk			= $playlist.children().children('.disk');			/* disk image */
-		
+
 		if ($disk.hasClass('rotating')) {
 			$disk.removeClass('rotating');
 			$playNowButton.children('i').removeClass('fa-pause').addClass('fa-play');
@@ -48,11 +84,11 @@ $(document).ready(function(){
 		}
 		e.preventDefault();
 	});
-	
+
 });
- 
+
 /* *************************************** */
-// One page navigation 
+// One page navigation
 /* *************************************** */
 
 $('.nav').onePageNav({
@@ -63,7 +99,7 @@ $('.nav').onePageNav({
 });
 
 // Block scrolling
-	
+
 $('.nav a').bind('click', function(e){
 		if($(window).width() < 768){
 			var $navMain = $(".navbar-collapse");
@@ -73,7 +109,7 @@ $('.nav a').bind('click', function(e){
 });
 
 /* Owl-Carousel Client Slider */
- 
+
 $(document).ready(function() {
   $("#portfolioOwl").owlCarousel({
 		autoPlay: 3000,
@@ -84,7 +120,7 @@ $(document).ready(function() {
     itemsDesktop : [1199,4],
     itemsDesktopSmall : [991,3],
     itemsTabletSmall : [767,2]
-  }); 
+  });
 });
 
 /* tool-tip initialize */
@@ -94,7 +130,7 @@ $(function () {
 });
 
 
-/* Scroll to Top */  
+/* Scroll to Top */
 
 $(".totop").hide();
 $(function(){
@@ -102,7 +138,7 @@ $(function(){
 		if ($(this).scrollTop()>300)
 		{
 			$('.totop').fadeIn();
-		} 
+		}
 		else
 		{
 			$('.totop').fadeOut();
