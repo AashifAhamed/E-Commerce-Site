@@ -69,6 +69,9 @@ hr{
 	transparent: 80%;
 } */
 .pad {padding-top: 10px;}
+.pad1 {
+    padding: 250px 0px;
+}
 .pad-bottom {padding-bottom: 10px;}
 
 .parallax-one { background: url('../img/promo/p1.jpg') fixed 50%;}
@@ -244,6 +247,7 @@ hr{
 	bottom: inherit;
 	top: 250px;
 	text-align: left;
+	text-shadow: 2px 2px 8px black;
 }
 .banner .slide-one h2, .banner .slide-two h2 {
 	margin-bottom: 15px;
@@ -1526,4 +1530,15 @@ footer .copy-right {
 	}
 	.signup-form form a:hover{
 		text-decoration: underline;
+	}
+
+	/* Aashif */
+	.overlay {
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    height: 125%;
+	    bottom: 0;
+	    z-index: -1;
 	}
