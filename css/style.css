@@ -272,6 +272,9 @@ hr{
 }
 
 /* default heading */
+.pad-right{
+	padding-right: 7%; 
+}
 
 .default-heading,
 .default-heading-shadow {
