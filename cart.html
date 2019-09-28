@@ -120,6 +120,13 @@
 										<a href="profile.html">
 											<span><i class="fa fa-user fa-lg"></i></span>
 										</a>
+										<!-- Mini-cart-content Start -->
+										<div class="total-cart-brief1">
+											<div class="cart-inner-btm">
+												<a href="login.html">Login / Register</a>
+											</div>
+										</div>
+										<!-- Mini-cart-content End -->
 									</li>
 								</ul>
 							</div>
@@ -342,7 +349,7 @@
 													<h6 class="text-right">Added items?</h6>
 												</div>
 												<div class="col-xs-3">
-													<a type="button" href="product.html"  class="btn btn-default btn-sm btn-block">
+													<a type="button" href="products.html"  class="btn btn-default btn-sm btn-block">
 														Update cart
 													</a>
 												</div>
@@ -380,26 +387,28 @@
 										</div>
 									</div>
 									<div class="panel-body">
-										<div class="col-xs-12">
-											<h5>Address</h5>
-											<textarea name="adi" id="adi" rows="4" cols="40" ></textarea>
-											<br>
-											<button class="btn btn-sm pas-bottom" type="button" name="edit">Edit</button>
+										<form class="" action="" method="post">
+											<div class="col-xs-12">
+												<h5>Address</h5>
+												<textarea name="adi" id="adi" rows="4" cols="40" required ></textarea>
+												<br>
+												<input  class="btn btn-sm pas-bottom" type="submit" name="edit"/>
+											</div>
+											<div class="col-xs-8">
+												<h5>Delivary Details</h5>
+												<figure>
+												<p >Estimated Delivery: 20/3/2020 to 2/4/2020</p>
+												</figure>
+											</div>
+										</form>
 										</div>
-										<div class="col-xs-8">
-											<h5>Delivary Details</h5>
-											<figure>
-											<p >Estimated Delivery: 20/3/2020 to 2/4/2020</p>
-											</figure>
-										</div>
-									</div>
 									<div class="panel-footer">
 										<div class="row text-left">
 											<div class="col-xs-6">
 												<h4 class="text-right">Total <strong>350.00</strong></h4>
 											</div>
 											<div class="col-xs-6">
-												<button type="button" id="checkout" class="btn btn-success btn-block">
+												<button type="submit" id="checkout" class="btn btn-success btn-block save" value="save">
 													Checkout
 												</button>
 											</div>
@@ -441,7 +450,7 @@
 						<h2>company</h2>
 						<ul>
 							<li><a href="profile.html">Profile</a></li>
-							<li><a href="login.html">Login</a></li>
+							<li><a href="rev.html">User Reviews</a></li>
 							<li><a href="register.html">Register</a></li>
 							<li><a href="products.html">Products</a></li>
 							<li><a href="cart.html">Checkout</a></li>
@@ -465,9 +474,9 @@
 						<form action="#">
 							<h2>Quick contact</h2>
 							<div class="footer-message-box">
-								<input type="text" placeholder="your email address" />
-								<textarea placeholder="your messege" ></textarea>
-								<input type="submit" value="submit"/>
+								<input type="email" class="custom-form" placeholder="Email" name="email" required placeholder="Enter a valid email address"/>
+								<textarea class="custom-form" placeholder="Additional information" ></textarea>
+								<input type="submit" class="custom-submit-2 save" value="SEND"	/>
 							</div>
 						</form>
 					</div>
@@ -475,7 +484,7 @@
 				<hr>
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="copyright-brief">
-						<p>Copyright &copy; <a href="">Choice Park (PVT) Ltd</a> All right reserved</p>
+						<p>Copyright not reserved &copy; <a href="">Choice Park (PVT) Ltd</a> Developed by HCI Group</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 " >
